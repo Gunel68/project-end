@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* overflow-x: hidden; */
+}
+
+.muellim {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.muellim img {
+    width: 490px; /* Set a fixed width for all images */
+    height: 280px; /* Set a fixed height for all images */
+    box-sizing: border-box;
+    margin: 5px;
+    /* Maintain aspect ratio */
+    flex: 2;
+}
+
+.muellim .caption {
+    text-align: center;
+     /* Match the width of the images */
+    margin: 5px;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .muellim img {
+        width: 100%; /* Şəkillərin genişliyini 100% edir */
+        flex: none; /* Mobil ekranlarda, şəkillərin flex qabiliyyətini kaldırır */
+    }
+}
+
+/* Planset Ekranlar (601px - 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .muellim img {
+        width: 48%; /* Planset ekranlarda iki sütunlu düzülmə üçün genişlik tənzimləyir */
+    }
+}

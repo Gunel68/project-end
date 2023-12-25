@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Yatay skroll barını göstərməyə icazə vermir */
+}
+
+.meydanca {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meydanca img {
+    width: 30.33%; /* Şəkillərin ölçüsünü müəyyən edir */
+    box-sizing: border-box; /* Padding və border daxil olmaqla ölçüləri qeyd etmək üçün */
+    margin: 5px; /* Şəkillər arasında boşluq */
+}
+
+.meydanca img{
+    flex: 2; /* İstəyə bağlı olaraq flex oranını tənzimləyə bilərsiniz */
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .meydanca img {
+        width: 100%; /* Şəkilləri ekrana sığdırmaq üçün genişlik 100% edir */
+        flex: 1; /* İstəyə bağlı olaraq flex oranını tənzimləyə bilərsiniz */
+    }
+}
+
+/* Planset Ekranlar (601px - 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .meydanca img {
+        width: 48%; /* Planset ekranlarda 2 sütunlu düzülmə üçün genişliyi dəyişdirir */
+    }
+}

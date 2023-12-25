@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Yatay skroll barını göstərməyə icazə vermir */
+}
+
+.qidalanma-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qidalanma,.qidalanma1,.qidalanma3,.qidalanma4{
+    width: 30%; /* Şəkillərin ölçüsünü 100% edir, hər biri eyni ölçüdə olacaq */
+    height: auto;
+    box-sizing: border-box; /* Padding və border daxil olmaqla ölçüləri qeyd etmək üçün */
+    margin: 5px; /* Şəkillər arasında boşluq */
+}
+/* Mobil Ekranlar (300px - 600px) */
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .qidalanma, .qidalanma1, .qidalanma3, .qidalanma4 {
+        width: 100%; /* Şəkilləri ekrana sığdırmaq üçün genişliyi dəyişdirir */
+        margin: 5px 0; /* Şəkillər arasında boşluğu tənzimləyir */
+    }
+}
+
+/* Planset Ekranlar (601px - 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .qidalanma, .qidalanma1, .qidalanma3, .qidalanma4 {
+        width: 48%; /* Planset ekranlarda 2 sütunlu düzülmə üçün genişliyi dəyişdirir */
+        margin: 5px; /* Şəkillər arasında boşluğu tənzimləyir */
+    }
+}

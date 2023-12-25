@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Səbətim</title>
+    <link rel="stylesheet" href="shoppingcart.css">
+    <link rel="icon" href="icon1.jpg">
+    
+</head>
+
+<body>
+    <div class="bag-container" id="bagContainer">
+        
+    </div>
+    <div class="payment-container">
+      
+      <img src="cart.png" alt="card">
+      <form id="paymentForm">
+          <label for="card-number">Kart Nömrəsi:</label>
+          <input type="text" id="card-number" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+
+          <label for="expiry-date">Bitmə Tarixi:</label>
+          <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+          <label for="Məbləğ">Məbləğ:</label>
+          <input type="number" id="məbləğ" name="məbləğ" placeholder="0.00AZN" required>
+
+          <button id="completePayment" disabled>Ödənişi Tamamla</button>
+      </form>
+
+      <p id="successMessage" style="display: none; color: green;">Ödəniş uğurla tamamlandı. </p>
+  </div>
+  <div alerShop><p   class="alert" style="color:red; align-items: center; font-size: 50px;">
+    
+    Səbət boşdur
+</p>
+
+<a class="shopLink"  href="shop.html" style="text-decoration: none; color: green; font-size: 40px;">Alış-veriş etmək üçün toxunun</a></div>
+    
+    
+    <script src="./shoppingcart.js"></script>
+</body>
+
+</html>

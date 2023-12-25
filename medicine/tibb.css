@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    display: flex;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.tibb1, .tibb2, .tibb4 {
+    flex: 1;
+    margin: 5px; /* Şəkillər arasında boşluq */
+}
+
+/* Mobil (300px - 600px) */
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+div {
+        flex-direction: column; /* Şəkilləri alt-üstə düz */
+    }
+
+    .tibb1, .tibb2, .tibb4 {
+        flex: 1;
+        margin: 5px 0; /* Şəkillər arasında boşluq */
+    }
+}
+
+/* Planset (601px - 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    div {
+        flex-direction: column; /* Şəkilləri alt-üstə düz */
+    }
+    .tibb1, .tibb2, .tibb4 {
+        flex: 1;
+        margin: 5px; /* Şəkillər arasında boşluq */
+    }
+}

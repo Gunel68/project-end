@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Yatay skroll barını göstərməyə icazə vermir */
+}
+
+.meshgele_img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meshgele {
+    width: 30.33% ; /* Əlavə olunmuş sətir: Şəkillərin ölçüləri və aralarında boşluq */
+    margin: 5px; 
+    /* Əlavə olunmuş sətir: Şəkillər arasında boşluq */
+    box-sizing: border-box; /* Əlavə olunmuş sətir: Padding və border daxil olmaqla ölçüləri qeyd etmək üçün */
+}
+
+.meshgele img {
+    width: 100%;
+    height: auto;
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .meshgele {
+        width: 100%; /* Şəkil div-lərini ekrana sığdırmaq üçün genişliyi dəyişdirir */
+        margin: 5px 0; /* Şəkillər arasında boşluğu tənzimləyir */
+    }
+}
+
+/* Planset Ekranlar (601px - 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .meshgele {
+        width: 48%; /* Planset ekranlarda 2 sütunlu düzülmə üçün genişliyi dəyişdirir */
+        margin: 5px; /* Şəkillər arasında boşluğu tənzimləyir */
+    }
+}

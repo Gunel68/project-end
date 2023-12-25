@@ -1,0 +1,294 @@
+body {
+    background: linear-gradient(to bottom right,#f0f8ff, #87cefa);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+   
+    height: 100vh;
+    
+}
+.header__all{
+    margin-top: 5%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+
+.nav-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-links a[href="/contact/contact.html"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.contact-us {
+  
+    font-weight: 800;
+  
+    width: 34%;
+    font-size: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.phone-icon {
+    width: 10%;
+    height: auto;
+    margin-right: 50vh;
+
+}
+.number{
+    margin-top: -37px;
+    font-size: 22px;
+    margin-right: 84px;
+    color: red;
+}
+.wp-logo{
+    width: 7%;
+    height: auto;
+    margin-right: 50vh;
+
+}
+.wp-number{
+    font-size: 22px;
+    margin-right: 84px;
+    margin-top: -31px;
+    color: purple;
+
+}
+.contact{
+    color: orange;
+    font-size: 80%;
+    margin-top: 3%;
+
+
+}
+.in-logo{
+    width: 7%;
+    height: auto;
+    margin-right: 50vh;
+
+}
+.insta-link{
+text-decoration: none;
+font-size: 5vh;
+margin-right: -26px;
+    margin-top: -35px;
+    color: green;
+    font-size: 51%;
+
+}
+ 
+
+.contact-form h2 {
+    color: #333; 
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    margin-right: 20%;
+    color: orange;
+
+}
+.contact-form{
+    margin-right: 10%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    margin-right: 20%;
+}
+
+.contact-form button {
+    background-color: #e74c3c;
+    color: #fff; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b; 
+}
+.all_page{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.header-text{
+  
+    width: 50%;
+}
+.location{
+    height: 50%;
+}
+.adreesDistrict{
+    color: green  ;
+}
+.adressSteet{
+    color: red;
+}
+.sendMessage{
+    color: red;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f8ff; 
+    text-align: center;
+    padding: 10px; 
+  }
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .all_page {
+        flex-direction: column;
+        align-items: center;
+        order: -1;
+    }
+    .header__all {
+        margin-top: 10%;
+    }
+
+    .overlay {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .contact-us {
+        width: 80%;
+        font-size: 6vh;
+        margin-top: 5%;
+    }
+
+    .phone-icon,
+    .wp-logo,
+    .in-logo {
+        width: 20%;
+        margin-right: 0;
+    }
+
+    .number,
+    .wp-number {
+        margin-right: 0;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .contact-form label {
+        margin-right: 0;
+    }
+
+    .contact-form {
+        margin-right: 0;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .all_page {
+        flex-direction: column;
+        align-items: center;
+        order: -1;
+    }
+    .header__all {
+        margin-top: 8%;
+    }
+
+    .overlay {
+        justify-content: space-evenly;
+    }
+
+    .nav-links {
+        position: static;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .contact-us {
+        width: 50%;
+        font-size: 8vh;
+        margin-top: 2%;
+    }
+
+    .phone-icon,
+    .wp-logo,
+    .in-logo {
+        width: 15%;
+        margin-right: 30px;
+    }
+
+    .number,
+    .wp-number {
+        margin-right: 30px;
+        margin-top: -31px;
+    }
+
+    .contact-form label {
+        margin-right: 10%;
+    }
+
+    .contact-form {
+        margin-right: 5%;
+    }
+
+    .all_page {
+        margin-top: 8%;
+    }
+}

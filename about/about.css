@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/about/rainbow.jpg');
+  background-size: cover;
+  background-position: center;
+background-image: blur(2px);
+}
+
+.about-container {
+  text-align: center;
+  padding: 20px;
+  border: 5px solid #e74c3c;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 70%;
+  position: relative;
+  z-index: 1; 
+  color: #000; 
+  margin-top: 5%;
+
+}
+
+.about-container h1 {
+  font-size: 36px;
+  color: #e74c3c;
+}
+
+.nav-links {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: red;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.nav-links a[href="/about/about.html"] {
+  background-color: #e74c3c;
+  color: white;
+}
+.exercises{
+  list-style: none;
+}
+@media screen and (max-width: 600px) {
+  .about-container {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  .nav-links {
+    top: 5px;
+    right: 5px;
+  }
+
+  .nav-links a {
+    font-size: 1em;
+    padding: 5px 10px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .about-container {
+    width: 80%;
+    margin-top: 8%;
+  }
+
+  .nav-links {
+    top: 8px;
+    right: 8px;
+  }
+
+  .nav-links a {
+    font-size: 1.1em;
+    padding: 8px 15px;
+  }
+}

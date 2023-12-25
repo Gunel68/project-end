@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Yatay skroll barını göstərməyə icazə vermir */
+}
+
+.playImgs{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+
+.play-room1,.play-room2,.play-room3,.play-room4{
+    width: 30%; /* Şəkillərin ölçüsünü 100% edir, hər biri eyni ölçüdə olacaq */
+    height: auto;
+    box-sizing: border-box; /* Padding və border daxil olmaqla ölçüləri qeyd etmək üçün */
+    margin: 5px; /* Şəkillər arasında boşluq */
+}
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .play-room1, .play-room2, .play-room3, .play-room4 {
+        width: 100%; /* Şəkillərin genişliyini mobil ekranlarda 100% edir */
+    }
+}
+
+/* Planset Ekranlar (601px - 991px) */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+    .play-room1, .play-room2, .play-room3, .play-room4 {
+        width: 48%; /* Planset ekranlarda şəkilləri iki sütunlu düzülmə üçün genişlik tənzimləyir */
+    }
+}
