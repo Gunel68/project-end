@@ -296,8 +296,11 @@ body {
 }
 .search-container{
     margin-top: 1%;
+   
+        margin-left: 5%;
+    }
 
-}
+
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
     .nav-links {
